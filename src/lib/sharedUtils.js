@@ -3,7 +3,7 @@
  * @param {string} msgVpnUrl - The Message VPN URL to validate.
  * @returns {boolean} - Returns true if the URL is valid, false otherwise.
  */
-export function isValidMsgVpnUrl(msgVpnUrl) { // <<< Added export
+export function isValidMsgVpnUrl(msgVpnUrl) {
     const regex = /^https:\/\/.*\.messaging\.solace\.cloud:\d+\/?$|^http(s?):\/\/localhost:\d+\/?$/;
     return regex.test(msgVpnUrl);
 }
@@ -26,7 +26,7 @@ export function isValidEncryptionKey(key) {
  * @param {string} smfHost - The Solace Message Router Host to validate.
  * @returns {boolean} - Returns true if the protocol is valid, false otherwise.
  */
-export function isValidSmfHostProtocol(smfHost) { // <<< Added export
+export function isValidSmfHostProtocol(smfHost) {
     const regex = /^(ws|wss|http|https):\/\/.*/;
     return regex.test(smfHost);
 }
